@@ -45,27 +45,6 @@ This outline uses a simplified analogy of sending a Snap to explain cybersecurit
 * Cybersecurity point:  Data breaches happen.  Companies like Snapchat invest heavily in security, but no system is foolproof. Your data could be at risk if their servers are compromised.
 * Image: A graphic of a data center.
 
-**Slide 7: Your Friend Receives the Snap**
-
-* Title: Snap Delivered!
-* Content:  Snapchat sends your snap to your friend’s phone, and they can finally see it! The whole process happens in milliseconds.
-* Image:  Two phones connected with a snap graphic being transferred.
-
-**Slide 8: Staying Safe Online - Best Practices**
-
-* Title: Protect Your Snaps – and Yourself!
-* Content:  Simple steps like strong passwords, being cautious about what you share, and keeping your apps updated can greatly improve your online safety.
-* Bullet points:
-    * Use strong, unique passwords.
-    * Be mindful of what you share online.
-    * Keep your apps and software updated.
-    * Enable two-factor authentication.
-    * Be wary of suspicious links and emails.
-
-**Slide 9:  Q&A**
-
-* Title: Questions?
-* Content: Open the floor for questions.
 
 
 **Reveal.js Implementation Notes:**
@@ -80,33 +59,6 @@ This outline uses a simplified analogy of sending a Snap to explain cybersecurit
 This outline provides a basic framework. You can adapt it to your specific needs and add more details based on the time allotted for your talk.  Remember to tailor the content to your audience's age and interests. Good luck with your presentation!
 
 
-Here are some ideas for related topics you could discuss during your Cyber Night in Ljubljana presentation, keeping in mind a basic level of understanding for 15-18 year olds:
-
-**Expanding on existing themes:**
-
-* **Phishing:** Explain how phishing attacks work and how to spot them. Use real-world examples of phishing emails or messages related to social media.  This ties into the DNS and API security aspects.
-* **Malware:** Briefly discuss different types of malware (viruses, spyware, ransomware) and how they can infect devices. Connect this to the importance of keeping software updated and being cautious about downloads.
-* **Social Engineering:** Explain how attackers manipulate people into giving up information or performing actions that compromise security.  Relate this to phishing and online scams.
-* **Password Security:**  Go beyond "strong passwords" and explain why password managers are useful and how multi-factor authentication adds an extra layer of protection.  This reinforces the API and data storage security discussion.
-* **Privacy Concerns:** Discuss the implications of sharing personal information online and how companies collect and use their data.  This links to the data storage section.
-
-**New related topics:**
-
-* **Cyberbullying and Online Harassment:**  Discuss the different forms cyberbullying can take and how to deal with it.  Emphasize the importance of responsible online behavior and reporting mechanisms.
-* **Fake News and Misinformation:**  Explain how misinformation spreads online and how to identify unreliable sources.  This is crucial for media literacy in the digital age.
-* **Digital Footprint:**  Talk about the lasting impact of online activity and how to manage one's digital footprint. This can be relevant to future job prospects and online reputation.
-* **Online Gaming Security:**  If your audience is into gaming, discuss the specific security risks related to online gaming, such as account theft and in-game fraud.
-* **IoT and Smart Devices:** Briefly introduce the concept of the Internet of Things (IoT) and the potential security vulnerabilities of connected devices.
-
-**Engaging Activities:**
-
-* **Interactive Quiz:**  Include a short quiz throughout the presentation to test their understanding of the concepts.
-* **Live Demonstrations (if possible):** Demonstrate a simple phishing attack or show how a password manager works.
-* **Case Studies:**  Use real-world examples of cyberattacks or data breaches to illustrate the impact of cybersecurity incidents.
-* **Local Angle:**  Mention any recent cybersecurity incidents in Slovenia or Europe to make the topic more relevant to your audience.
-
-
-Remember to keep the tone engaging and avoid overwhelming your audience with technical details.  Focus on practical tips and advice they can use to stay safe online.  By relating the concepts to their everyday online activities, like using Snapchat, you can make cybersecurity more relatable and less intimidating.
 
 
 You're right, focusing on the TLS handshake process after obtaining the Snapchat API's IP address offers a great opportunity to delve a bit deeper into practical cybersecurity within the context of sending a Snap. Here's a breakdown of what can go wrong during the TLS handshake and how you can explain it to your audience:
