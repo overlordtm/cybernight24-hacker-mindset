@@ -1,5 +1,5 @@
 <?php
-die("It is not so easy!")
+die("It is not so easy!");
 include_once("db.php");
 
 // if it is a POST request
