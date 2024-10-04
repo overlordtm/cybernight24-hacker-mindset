@@ -33,14 +33,13 @@
             <section>
                 <h3>O meni</h3>
                 <p>
-                    Rojen pred Googlom, začel programirati približno isti čas, kot je prišel Google. To je kar pomagalo
-                    :)
+                    Rojen pred Googlom, začel programirati približno isti čas, kot je prišel Google. 
                 </p>
                 <p>
                 <ul>
-                    <li><a href="https://koofr.si/ekipa/">razvijalec @ koofr.net</a></li>
-                    <li><a href="https://github.com/overlord_tm">GitHub</a></li>
-                    <li><a href="https://x.com/overlord_tm">Twitter</a></li>
+                    <li><a href="https://koofr.si/ekipa/" target="_blank">razvijalec @ koofr.net</a></li>
+                    <li><a href="https://github.com/overlord_tm" target="_blank" >GitHub</a></li>
+                    <li><a href="https://x.com/overlord_tm" target="_blank">Twitter</a></li>
                 </ul>
                 </p>
                 <aside class="notes">
@@ -162,25 +161,134 @@
                         (domene)
                     </aside>
                 </section>
+                <section>
+                    <h3>Kaj gre lahko narobe?</h3>
+                    <ul>
+                        <li>Zastrupljanje DNS predpomnilnika</li>
+                        <li>Ponarejanje DNS</li>
+                        <li>Ugrabitev domene</li>
+                        <li>...</li>
+                    </ul>
+                    <aside class="notes">
+                        Računalnik lahko vzpostavi internetno povezavo z drugim računalnikom le tako, da ve njegovo IP
+                        številko. Ker smo ljudje slabi v pomnenju številk, smo izumili DNS sistem, ki prevaja besede
+                        (domene)
+                    </aside>
+                </section>
             </section>
             <section>
                 <section>
                     <h3>Povežimo se!</h3>
                     <img class="r-stretch" src="assets/conn.jpg" />
                     <p>
-                        Sedaj vemo IP naslov Snapchata, čas je da vzpostavimo povezavo. Vzpostavitev povezave lahko primerjamo s pošiljanjem pošte.
+                        Sedaj vemo IP naslov Snapchata, čas je da vzpostavimo povezavo. Vzpostavitev povezave lahko
+                        primerjamo s pošiljanjem pošte.
                     </p>
                     <aside class="notes">
-                        Obstaja veliko protokolov, ki delujejo na več nivojih. Naj samo omenim IP protokol, ki si ga lahko predstavljamo kot sistem hisnih stevilk na internetu. Na vrhu IP protokola sedita TCP in UPD. TCP je recimo Posta, UDP pa ena nezanesljiva dostavna služba. Na vrhu TCP protokola pa sta HTTP in HTTPS, katerima se bomo bolj posvetili.
+                        Obstaja veliko protokolov, ki delujejo na več nivojih. Naj samo omenim IP protokol, ki si ga
+                        lahko predstavljamo kot sistem hisnih stevilk na internetu. Na vrhu IP protokola sedita TCP in
+                        UPD. TCP je recimo Posta, UDP pa ena nezanesljiva dostavna služba. Na vrhu TCP protokola pa sta
+                        HTTP in HTTPS, katerima se bomo bolj posvetili.
                     </aside>
                 </section>
                 <section>
                     <h3>HTTP in HTTPS</h3>
                     <img class="r-stretch" src="assets/http.jpg" />
-                    <p>
-                        TODO
+                    <p style="font-size: 1.5rem">
+                        <span style="font-weight: bold;">HTTP</span>: Povezava je nekriptirana, podobno kot pošiljanje
+                        razglednice z morja. Vsak, ki dobi paket v roke, lahko prebere vsebino.
+                    </p>
+                    <p style="font-size: 1.5rem">
+                        <span style="font-weight: bold;">HTTPS</span>: Vsebina je kriptirana, podobno kot pismo v
+                        ovojnici. Kdro dobi paket v roke, lahko vidi samo, kdo je naslovnik, ne more pa prebrati
+                        vsebine.
                     </p>
                 </section>
+                <section>
+                    <h3>Kaj vse gre lahko narobe?</h3>
+                    <img class="r-stretch" src="assets/mitm.jpg"    />
+                    <ul>
+                        <li>Nepravilne konfukuracije: uporaba starih in ranljivih protokolov, uporaba šibkih šifer</li>
+                        <li>Napadi MITM</li>
+                        <li>Ranljivosti v implementaciji protokolov</li>
+                        <li>Napadi onemogočanja storitve</li>
+                        <li>...</li>
+                    </ul>
+                    <aside class="notes">
+                        Kako bi se povezali, bi morali biti povezani. Cilj je, da bi se povezali, da bi se povezali
+                        z drugim računalnikom.
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Snap je prisel na cilj</h3>
+                    <img class="r-stretch" src="assets/nocloud.webp" />
+                    <aside class="notes">
+                        Premagali smo vse ovire na poti in naš snap je prisel na cilj, snapchatov strežnik. Kaj se zgodi sedaj?
+                    </aside>
+                </section>
+                <section>
+                    <h3>Validacija, avnentikacija in avtorizacija</h3>
+                    <img class="r-stretch" src="assets/secureapi.jpeg" />
+                    <aside class="notes">
+                        Ko strežnik
+                    </aside>
+                </section>
+                <section>
+                    <h3>Kaj gre lahko narobe pri validaciji</h3>
+                    <ul>
+                        <li>Nezadostna validacija:
+                            <ul>
+                                <li>XSS</li>
+                                <li>SQL vrivanje</li>
+                                <li>Vrivanje ukazov</li>
+                                <li>Napadi onemogočanja storitve preko regex validacije</li>
+                            </ul>
+                        </li>
+                        <li>Nekonsistentna validacija: podatki se validirajo na strani klienta, ne pa tudi strežnika</li>
+                        <li>...</li>
+                    </ul>
+                    <aside class="notes">
+                        Ko strežnik
+                    </aside>
+                </section>
+                <section>
+                    <h3>Kaj gre lahko narobe pri avtentikaciji</h3>
+                    <ul>
+                        <li>Šibka gesla</li>
+                        <li>Napake v logiki
+                            <ul>
+                                <li>Predvidljiv ID seje</li>
+                                <li>Polnjenje poverilnic (credential stuffing)</li>
+                                <li>Napadi s surovo silo</li>
+                                <li>Odsotnost MFA</li>
+                            </ul>
+                        </li>
+                        <li>Nepravilna hramba poverilnic</li>
+                    </ul>
+                    <aside class="notes">
+                        Ko strežnik
+                    </aside>
+                </section>
+                <section>
+                    <h3>Kaj gre lahko narobe pri avtorizaciji</h3>
+                    <ul>
+                        <li>Nepreverjanje avtorizacije</li>
+                        <li>Napake v logiki</li>
+                        <li>Nekonsistentnosti</li>
+                    </ul>
+                    <aside class="notes">
+                        Ko strežnik
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <h1>Demo</h1>
+            </section>
+            <section>
+                <h1>Konec</h1>
+                <img class="r-stretch" src="assets/thanks.jpeg">
             </section>
         </div>
     </div>
