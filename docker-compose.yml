@@ -1,0 +1,28 @@
+version: "3.2"
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile.php-fpm
+    volumes:
+      - .:/var/www/html
+
+  nginx:
+    image: nginx:1.17
+    ports:
+      - 8888:80
+    volumes:
+      - .:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+      - db
+
+  db:
+    image: mariadb:10.3
+    environment:
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_USER=dev
+      - MARIADB_PASSWORD=dev
+      - MARIADB_DATABASE=dev

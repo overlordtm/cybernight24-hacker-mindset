@@ -1,0 +1,4 @@
+PRIVATE.md
+uploads/*
+!uploads/.gitkeep
+node_modules/
