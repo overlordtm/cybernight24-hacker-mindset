@@ -1,4 +1,5 @@
 PRIVATE.md
 uploads/*
 !uploads/.gitkeep
+!uploads/users.txt
 node_modules/
