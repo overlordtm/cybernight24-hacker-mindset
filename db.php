@@ -1,6 +1,6 @@
 <?php
 
-$db = new mysqli("db", "dev", "dev", "dev");
+$db = new mysqli("db", "dev", "geslo", "dev");
 
 $db->query("CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(255) NOT NULL UNIQUE, password VARCHAR(255) NOT NULL)");
 $db->query("CREATE TABLE posts (

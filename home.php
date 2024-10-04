@@ -8,8 +8,7 @@ if (!isset($username)) {
     header("Location: index.php?page=login.php");
 }
 
-
-$users = $db->query("SELECT username FROM users ORDER BY id DESC");
+$users = $db->query("SELECT username FROM users WHERE username != '" . $username . "' ORDER BY id DESC");
 
 if (isset($_GET["filter"])) {
     $q = "SELECT * FROM posts WHERE username = '" . $_GET["filter"] . "'";
@@ -38,6 +37,8 @@ $posts = $db->query($q);
 
         <input type="submit" value="Upload">
     </form>
+
+    <h1>Pozdravljen <?= $username ?></h1>
 
     <ul>
         <?php foreach ($users as $user) : ?>
