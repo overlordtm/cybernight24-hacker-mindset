@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <body>
 
-        <h1>Login</h1>
+        <h1>Login to InstaScam</h1>
 
         <form action="login.php" method="post">
             <label for="username">Username:</label><br>
@@ -42,6 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <input type="submit" value="Login">
         </form>
+        <a href="index.php?page=register.php">Register</a>
 
     </body>
 
